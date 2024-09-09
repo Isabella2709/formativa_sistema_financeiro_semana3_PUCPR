@@ -19,6 +19,15 @@ public class Financiamento {
         return taxaJurosAnual;
     }
 
+    @Override
+    public String toString() {
+        return "Financiamento{" +
+                "valor=" + valormovel +
+                ", parcelas=" + prazoFinanciamento +
+                ", taxaJuros=" + taxaJurosAnual +
+                '}';
+    }
+
 
     public Financiamento(double valormovel, int prazoFinanciamento, double taxaJurosAnual) {
         this.valormovel = valormovel;
